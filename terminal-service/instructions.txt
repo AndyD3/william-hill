@@ -1,0 +1,16 @@
+
+1. Run sqlScript on a mysql database.
+2. Update application.properties to point to the correct database path.
+3. Run registry-service-1.1.0-SNAPSHOT.jar
+4. Build project using maven.
+5. Run the jar from the build.
+6  The endpoints are /terminals and terminals/{uid}
+    - Postman can be used to test the app.
+    - json structure for a create:
+            {
+                "shopId": 4,
+                "terminalIndex": 4,
+                "installStatus": "DECOMMISSIONED",
+                "installationDate": "2018-12-30T22:00:00.000+0000",
+                "softwareVersion": "543"
+        	}
